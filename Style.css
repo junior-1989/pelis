@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(186, 186, 186);
+  margin-top: 20px; /* Añade un margen superior para separar el título del contenido */
+}
+
+.card {
+  width: 100%;
+  max-width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(19, 19, 19);
+  color: white; /* Añade color de texto para asegurarte de que sea visible */
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.card a.button {
+  display: block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #e3ca27;
+  color: #060606;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  min-height: 100vh; /* Cambia height a min-height para permitir el crecimiento vertical en contenido largo */
+  display: flex;
+  flex-wrap: wrap; /* Añade flex-wrap para permitir que las tarjetas se envuelvan en varias filas */
+  justify-content: center;
+  align-items: flex-start; /* Cambia align-items a flex-start para alinear las tarjetas en la parte superior */
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: #e3ca27;
+  color: #060606;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pagination a:hover {
+  background-color: #ffd700;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 80%;
+    max-width: none;
+  }
+}
